@@ -8,7 +8,7 @@ import router from "./src/routes/index"
 const app: Express = express();
 const port = process.env.PORT || 1234;
 
-const uri: string = 'mongodb://localhost:27017/Books';
+const uri: string = 'mongodb://127.0.0.1:27017/Books';
 
 mongoose.connect(uri);
 mongoose.Promise = global.Promise;
