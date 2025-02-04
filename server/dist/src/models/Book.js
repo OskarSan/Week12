@@ -39,6 +39,6 @@ const BookSchema = new mongoose_1.Schema({
     author: { type: String, required: true },
     name: { type: String, required: true },
     pages: { type: Number, required: true }
-});
+}, { collection: 'Books' });
 const Book = mongoose_1.default.model('Book', BookSchema);
 exports.Book = Book;
