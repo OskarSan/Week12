@@ -10,7 +10,7 @@ const mongoose_1 = __importDefault(require("mongoose"));
 const index_1 = __importDefault(require("./src/routes/index"));
 const app = (0, express_1.default)();
 const port = process.env.PORT || 1234;
-const uri = 'mongodb://127.0.0.1:27017/Books';
+const uri = 'mongodb://127.0.0.1:27017/testdb';
 mongoose_1.default.connect(uri);
 mongoose_1.default.Promise = global.Promise;
 const db = mongoose_1.default.connection;
